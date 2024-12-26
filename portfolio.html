@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - AnimeWorld</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .bg-blur {
+            background-image: url('images/anime cat.gif');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+            height: 100%;
+            position: fixed;
+            width: 100%;
+            z-index: -1;
+        }
+        .content {
+            background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 60px; /* Отступ для футера */
+            position: relative;
+            z-index: 1;
+        }
+        .portfolio-item {
+            margin-bottom: 30px;
+        }
+        .portfolio-item img {
+            transition: transform 0.3s;
+            border-radius: 10px;
+        }
+        .portfolio-item img:hover {
+            transform: scale(1.1);
+        }
+        .portfolio-description {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .portfolio-header {
+            background-image: url('images/anime cat.gif');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            padding: 40px 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .portfolio-header h1 {
+            font-size: 3em;
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+        .portfolio-header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+            border-radius: 10px;
+            z-index: 0;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            z-index: 1;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-blur"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">AnimeWorld</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Контакты</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="portfolio.html">Портфолио</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="extra.html">Дополнительная страница</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container mt-5 content">
+        <div class="portfolio-header">
+            <h1>Портфолио</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <img src="images/магичка.jpg" class="img-fluid" alt="Anime Image 1">
+                <div class="portfolio-description">
+                    <p>Эпическая битва между героями и злодеями в фантастическом мире.</p>
+                </div>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="images/rony.jpg" class="img-fluid" alt="Anime Image 2">
+                <div class="portfolio-description">
+                    <p>Трогательная история о дружбе и приключениях в волшебной стране.</p>
+                </div>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="images/bild.jpg" class="img-fluid" alt="Anime Image 3">
+                <div class="portfolio-description">
+                    <p>Захватывающая история о борьбе добра и зла в мире магии.</p>
+                </div>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="images/voise.jpg" class="img-fluid" alt="Anime Image 4">
+                <div class="portfolio-description">
+                    <p>Романтическая комедия о школьной жизни и первой любви.</p>
+                </div>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="images/nn.jpg" class="img-fluid" alt="Anime Image 5">
+                <div class="portfolio-description">
+                    <p>Эпическое приключение в мире фантазий и мифических существ.</p>
+                </div>
+            </div>
+            <div class="col-md-4 portfolio-item">
+                <img src="images/ar.jpg" class="img-fluid" alt="Anime Image 6">
+                <div class="portfolio-description">
+                    <p>Драматическая история о поиске себя и преодолении трудностей.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-3">
+        <p>&copy; 2024 AnimeWorld. Все права защищены.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дополнительная страница - AnimeWorld</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            background-image: url('images/anime cat.gif');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .content {
+            background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 60px; /* Отступ для футера */
+        }
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .testimonial {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">AnimeWorld</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Портфолио</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="extra.html">Дополнительная страница</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container mt-5 content">
+        <h1 class="text-center mb-5">Дополнительная информация</h1>
+        
+        <h2 class="mb-4">Часто задаваемые вопросы (FAQ)</h2>
+        <div class="faq-item">
+            <h5>Вопрос 1: Как я могу зарегистрироваться на сайте?</h5>
+            <p>Ответ: Для регистрации на сайте перейдите на страницу регистрации и заполните все необходимые поля.</p>
+        </div>
+        <div class="faq-item">
+            <h5>Вопрос 2: Как я могу связаться с поддержкой?</h5>
+            <p>Ответ: Вы можете связаться с нашей поддержкой через страницу контактов или отправить нам письмо на support@animeworld.com.</p>
+        </div>
+        <div class="faq-item">
+            <h5>Вопрос 3: Как я могу добавить свой отзыв?</h5>
+            <p>Ответ: Вы можете добавить свой отзыв на странице отзывов, заполнив форму и отправив её нам.</p>
+        </div>
+
+        <h2 class="mt-5 mb-4">Отзывы пользователей</h2>
+        <div class="testimonial">
+            <p>"AnimeWorld - это лучший сайт для всех любителей аниме! Здесь я нашел много интересной информации и познакомился с новыми друзьями." - Алексей</p>
+        </div>
+        <div class="testimonial">
+            <p>"Отличный сайт с множеством полезных ресурсов и новостей о мире аниме. Рекомендую всем!" - Мария</p>
+        </div>
+
+        <h2 class="mt-5 mb-4">Полезные ресурсы</h2>
+        <ul>
+            <li><a href="https://www.crunchyroll.com" target="_blank">Crunchyroll</a> - Стриминговый сервис для просмотра аниме.</li>
+            <li><a href="https://www.animenewsnetwork.com" target="_blank">Anime News Network</a> - Новости и обзоры о мире аниме.</li>
+            <li><a href="https://www.myanimelist.net" target="_blank">MyAnimeList</a> - База данных аниме и манги.</li>
+        </ul>
+    </section>
+
+ 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
